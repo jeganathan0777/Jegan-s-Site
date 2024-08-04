@@ -1,0 +1,155 @@
+/* Default Styles (Desktop First) */
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+ 
+   *{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+
+
+
+
+  /* Mobile Styles (Using Media Query) */
+  @media only screen and (max-width: 768px) {
+
+    .nav-left {
+        display: none;
+
+    }
+
+    /* Navbar container */
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0); /* Semi-transparent background */
+            backdrop-filter: blur(3px); /* Background blur effect */
+            padding: 10px 0;
+            display: flex;
+            justify-content: center; /* Center the navbar */
+            z-index: 1000; /* Ensure it stays above other content */
+            border-bottom: .5px solid rgb(128, 128, 128, 0.5);
+            
+        }
+
+        /* Navbar list */
+        .nav-list {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar items */
+        .nav-list li {
+            margin: 0;
+            padding: 0;
+            margin-top: 8px;
+            margin-bottom: 6px;
+
+        }
+
+        /* Navbar links */
+        .nav-list a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 0.9rem;
+            padding: 10px 15px;
+            transition: 0.3s;
+        }
+
+        .nav-list a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+    
+        .hero-section {
+            margin-top: 160px;
+
+        }
+        
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: black; }
+        }
+
+        .changing-text {
+            display: inline;
+            border-right: 2px solid black;
+            overflow: hidden;
+            height: max-content;
+            animation: typing 1s steps(30, end), blink-caret 0.75s step-end infinite;
+        }
+
+        h1 {
+            font-weight:bolder;
+        }
+        .hero-section {
+            width: 75%;
+            margin-bottom: 112px;
+        }
+         .hero-btn {
+            display: none;
+         }
+         
+         .hero-btn-black {
+            background-color: #ffffff;
+            padding: 15px 25px;
+            margin-top: 32px;
+            border-radius: 50px;
+            border-width:0.8px;
+            color: #000000;
+            transition: 0.2s ease-in-out;
+         }
+         .hero-btn-black:hover {
+            background-color: #000000;
+            padding: 15px 25px;
+            margin-top: 32px;
+            border-radius: 50px;
+            border-width:0.8px;
+            color: #ffffff;
+            transition: 0.2s ease-in-out;
+         }
+
+         .hero-section > p {
+            font-size: small;
+         }
+
+         .container, .portfolio-section {
+           height: max-content;
+           margin: auto;
+           text-align: center;
+         }
+
+
+
+         
+  }
+  
